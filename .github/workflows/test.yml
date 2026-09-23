@@ -1,0 +1,24 @@
+name: Test
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  run_tests:
+    name: Run tests
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v5
+
+      - name: Set up Python
+        run: uv python install
+
+      - name: Install the project
+        run: uv sync --group rlds
+
+      - name: Run tests
+        run: JAX_PLATFORMS=cpu uv run pytest --strict-markers -m "not manual"
