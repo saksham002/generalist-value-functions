@@ -1,6 +1,6 @@
 # SeeQ: Training Generalist Value Functions for Long-Horizon Robotic Manipulation
 
-[Project website with videos](https://anonymous.4open.science/w/seeq-iclr-42CC/) · [Pretrained SeeQ-3B checkpoint](https://huggingface.co/ANONYMOUS_HF_REPO)
+[Project website with videos](https://anonymous.4open.science/w/seeq-iclr-67A3/) · [Pretrained SeeQ-3B checkpoint](https://huggingface.co/ANONYMOUS_HF_REPO)
 
 Anonymous authors
 
