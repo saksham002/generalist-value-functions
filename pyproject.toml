@@ -53,9 +53,6 @@ convert = [
     "torchvision",
 ]
 
-[project.urls]
-Repository = "https://github.com/saksham002/generalist-value-functions"
-
 [dependency-groups]
 dev = [
     "pytest>=8.3.4",

@@ -1,8 +1,8 @@
 # SeeQ: Training Generalist Value Functions for Long-Horizon Robotic Manipulation
 
-[Paper](https://arxiv.org/abs/2609.22085) · [Project website with videos](https://saksham002.github.io/seeq/) · [Pretrained SeeQ-3B checkpoint](https://huggingface.co/CMU-AIRe/SeeQ-3B)
+[Project website with videos](ANONYMOUS_WEBSITE_URL) · [Pretrained SeeQ-3B checkpoint](https://huggingface.co/ANONYMOUS_HF_REPO)
 
-Saksham Singh, Zheyuan Hu, Max Sobol Mark, Jeffrey Yu, Zackory Erickson, Aviral Kumar (Carnegie Mellon University)
+Anonymous authors
 
 ![SeeQ overview](docs/seeq_teaser.png)
 
@@ -24,8 +24,7 @@ a pi-0.5 policy with it.
 The code targets Python 3.11 and is managed with [uv](https://docs.astral.sh/uv/).
 
 ```bash
-git clone https://github.com/saksham002/generalist-value-functions.git
-cd generalist-value-functions
+# download the repository zip from its anonymous link, unzip it and cd into it
 uv sync --group rlds          # add --extra gpu on a CUDA host, --extra tpu on a TPU host
 ```
 
@@ -68,7 +67,7 @@ pretraining run of its config, `robocoin_bimanual_paligemma_cql_rlds_subtask_ar`
 
 ```bash
 export CKPT=./checkpoints
-uv run hf download CMU-AIRe/SeeQ-3B \
+uv run hf download ANONYMOUS_HF_REPO \
     --local-dir $CKPT/robocoin_bimanual_paligemma_cql_rlds_subtask_ar/seeq/230000
 ```
 
@@ -224,17 +223,6 @@ src/openpi/
   policies/subtask_decoder.py     autoregressive subtask decoding from a critic
   rlds_utils/                     evaluation utilities and checkpoint loading
 packages/openpi-client/           minimal websocket client for robot code
-```
-
-## Citation
-
-```bibtex
-@article{singh2026seeq,
-  title   = {SeeQ: Training Generalist Value Functions for Long-Horizon Robotic Manipulation},
-  author  = {Singh, Saksham and Hu, Zheyuan and Mark, Max Sobol and Yu, Jeffrey and Erickson, Zackory and Kumar, Aviral},
-  journal = {arXiv preprint arXiv:2609.22085},
-  year    = {2026},
-}
 ```
 
 ## Acknowledgements and license
