@@ -2,8 +2,6 @@
 
 [Project website with videos](https://anonymous.4open.science/w/seeq-iclr-67A3/) · [Pretrained SeeQ-3B checkpoint](https://huggingface.co/seeq-iclr/SeeQ-3B)
 
-Anonymous authors
-
 ![SeeQ overview](docs/seeq_teaser.png)
 
 SeeQ (**S**ubtask-**e**licit**e**d **Q**-functions) trains a generalist Q-function on a
@@ -24,7 +22,7 @@ a pi-0.5 policy with it.
 The code targets Python 3.11 and is managed with [uv](https://docs.astral.sh/uv/).
 
 ```bash
-# download the repository zip from its anonymous link, unzip it and cd into it
+# download the repository zip, unzip it and cd into it
 uv sync --group rlds          # add --extra gpu on a CUDA host, --extra tpu on a TPU host
 ```
 
